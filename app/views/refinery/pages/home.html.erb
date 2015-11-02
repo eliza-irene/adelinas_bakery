@@ -1,0 +1,25 @@
+<section id="sectionslide">    
+    <ul>
+      <li>     
+        <%= image_tag( ( 'slider-image-1.png' ), :class => "slider-img" )%>
+      </li>
+     </ul>
+	<div class="bottomwaves"></div> 
+</section>
+<div id="featured-images">
+	<h2 class="featured-images-title">
+		Blissfully baked to perfection
+	</h2>
+	<%= image_tag( ( 'cake-icon.png' ), :class => "cake-icon" )%>
+	</br>
+	<%= image_tag( ( 'line.png' ), :class => "divider-line" )%>
+	<ul id='home-gallery'>
+	  <% @page.images.each do |image| %>
+	    <li class="homepage-images">
+	      <%= link_to image_tag(image.thumbnail(geometry: "200x200#c").url), 
+		                  image.thumbnail( geometry: "900x600" ).url,
+		                  :class => 'gallery-img', :data => { :lightbox => 'lightbox' } %>
+	    </li>
+	 <% end %>
+	</ul>
+</div>

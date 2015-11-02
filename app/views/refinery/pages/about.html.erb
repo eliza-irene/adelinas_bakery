@@ -1,0 +1,17 @@
+<div id='about'>
+	<section class="grid_8 about-content">
+		<h2>Head Whisk</h2>
+    	<%= render "/refinery/content_page" %>
+   	</section>
+   	<section class="grid_4 about-image-container">
+   		<div class="grid_6 left-pics">
+	   		<%= image_tag( ( 'about-image-mixing.png' ), :class => "about-image-mixing" )%>
+	   		<%= image_tag( ( 'about-image-cake.png' ), :class => "about-image-cake" )%>
+   		</div>
+   		<div class="grid_6 right-pics">
+		   	<% @page.images.each do |image| %>
+				    <%= link_to image_tag(image.thumbnail( "200x200#c" ).url), image.thumbnail( geometry: "300x300" ).url, :class => 'about-image', :data => { :lightbox => 'lightbox' } %>
+			<% end %>
+		</div>
+	</section>
+</div>

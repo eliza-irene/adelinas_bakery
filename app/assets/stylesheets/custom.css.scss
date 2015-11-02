@@ -1,0 +1,461 @@
+/*this is the main css of the entire site, the rules are divided into sections. For example, to change the services section, changes only the rules of this section at line 190*/
+
+html {
+  position: relative;
+  min-height: 100%;
+  min-width:100%;
+}
+
+body {
+	margin:0px;
+	padding:0px;
+	margin-bottom: 60px;
+	height:100%;
+	background-image:image-url('vector-background.png')
+}
+
+.index.en, .show.en, .edit.en, .new.en, .delete.en {
+	background: #9DCBF2;
+}
+#menu a.active, #menu a:hover, #menu a:focus {
+	color: #7d7d7d;
+}
+#site_bar {
+	background: #70B3ED;
+	#site_bar_refinery_cms_logo {
+		display: none;
+	}
+	#editor_switch span {
+		border: none;
+	}
+	#editor_switch a, a:hover {
+		background: #9DCBF2;
+		border: #ffffff;
+	}
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color:#ffffff;
+  z-index: 10;
+  .footer-left{
+  	background-color:#9dcbf2;
+  	height: 40px;
+  	padding-top:20px;
+  	.copyright-text {
+  		float:right;
+  		margin-right:15px;
+  		margin-top: 4px;
+  		display:inline-block;
+  		color:#70b3ed;
+  	}
+  	.text {
+  		float:right;
+  		margin-right:15px;
+  		display:inline-block;
+  		color:#70b3ed;
+  	}
+  } 
+  .footer-right {
+  	background-color:#70b3ed;
+    height: 45px;
+    padding-top: 15px;
+  	ul.text {
+  		font-size:30px;
+  		float:left;
+  		margin:0 0 0 15px;
+  		li {
+  			display:inline-block;
+	  		a {
+	  			color:#9dcbf2;
+	  			:hover {
+	  				color: #ffffff;
+	  			}
+	  		}
+  		} 
+  	}
+  	.icon-space {
+  		margin-right:10px;
+  	}
+  }
+  .admin-link {
+    height: 39px;
+    margin-top: 5px;
+    margin-right: 5px;
+    float: right;
+    font-family: 'Sacramento', cursive;
+    color:#9dcbf2;
+    font-size: 18px;
+		&:hover {
+			color: #ffffff;
+		}
+  }
+}
+
+/*font face*/
+@font-face {
+	font-family: 'Sacramento', cursive;
+}
+/*end font face*/
+
+/*start tag*/
+h1, h2, h3, h4, h5, h6 {
+	margin:0px;
+	padding:0px;
+	font-family: 'Sacramento';
+	font-weight:normal;
+}
+h1{
+	color:#7d7d7d;
+	font-size:50px;
+}
+h2{
+	color:#7d7d7d;
+	font-size:40px;
+}
+p{
+	line-height:22px;
+	font-size:17px;
+	margin:0px;
+	padding:0px;
+	font-family: 'Open Sans', sans-serif;
+}
+a{
+	text-decoration:none;	
+}
+a img{
+	border:0px;	
+}
+/*end tag*/
+
+/*start navigationmenu*/
+#navigationmenu{
+	width:100%;
+	float:left;
+	background-repeat:repeat;
+	color:#7d7d7d;	
+	font-family: 'Sacramento';	
+	font-size:36px;
+	text-shadow: 2px 2px 0 rgba(223, 223, 223, 0.9);
+}
+#navigationmenu .container{
+	padding:10px 0px;	
+}
+.logo{
+	height:180px;
+}
+.logo img{
+	position:absolute;
+	margin-left: -95px;
+	left: 50%;
+	z-index:2;
+	height: 254px;
+	-webkit-transition:all 700ms;
+	-o-transition:all 700ms;
+	transition:all 700ms;	
+}
+.logo-small img{
+	margin: 33px 0 0 60px;
+	z-index:30;
+	height: 175px;
+	-webkit-transition:all 700ms;
+	-o-transition:all 700ms;
+	transition:all 700ms;	
+}
+nav{
+	margin:55px 20px 20px 20px;	
+}
+nav ul{
+	margin:0px;
+	padding:0px;
+	float:left;
+	list-style:none;	
+}
+nav ul li{
+	margin:0px 10px;
+	padding:0px;
+	float:left;	
+}
+nav a{
+	padding:20px 10px;
+	float:left;
+	color:#7d7d7d;	
+	
+	-webkit-transition:color 250ms ease-in;  
+   -moz-transition:color 250ms ease-in;  
+   -o-transition:color 250ms ease-in;  
+   transition:color 250ms ease-in;  
+}
+nav a:hover{
+	color:#bbbbbb;	
+	-webkit-transition:color 250ms ease-in;  
+   -moz-transition:color 250ms ease-in;  
+   -o-transition:color 250ms ease-in;  
+   transition:color 250ms ease-in; 
+}
+
+.leftnavigation, .leftnavigation li{
+	float:right;
+}
+.rightnavigation, .rightnavigation li{
+	float:left;	
+}
+/*end navigationmenu*/
+
+#body_content_title {
+	color: transparent;
+}
+
+#page {
+	clear: both;
+	background-color: rgba(112,179,237, 0.2);
+	min-height: 100%;
+}
+
+/*start sectionslide*/
+#sectionslide{
+	margin-bottom: 37px;
+	width:100%;
+	float:left;
+	
+}
+.caption{
+	color:#FFF;
+	font-size:17px;
+	font-family: 'Sacramento';	
+}
+#services .bottomwaves{
+	margin-top:-15px;
+}
+#sectionslide ul{
+  margin: 0;
+	padding: 0; 
+	border: 0; 
+	outline: 0; 
+	font-size: 100%; 
+	vertical-align:baseline; 
+	// background: transparent;
+	// display:none;
+}
+/*end sectionslide*/
+
+#page-not-found-page {
+	#page {
+		min-height: 525px;
+		#body {
+			text-align: center;
+		}
+	}
+}
+
+#thank-you-page {
+	#page {
+		min-height: 525px;
+		#body {
+			text-align: center;
+		}
+	}
+}
+#about-page {
+	#page {
+		min-height: 522px;
+		padding-left: 5%;
+	}
+	#about {
+		.about-content {
+			#body_content_title {
+				display: none;
+			}
+			h2 {
+				margin: 6% 0 0 19%;
+			  text-shadow: 2px 2px 0 rgba(223, 223, 223, 0.9);
+			  color: black;
+			  float: left;
+			}
+			#body {	
+		    min-height: 450px;
+		    background-image: url(recipe-card.png);
+		    background-repeat: no-repeat;
+		    background-size: 90% 98%;
+		    margin: 5% 0 0 10%;
+				.inner {
+					padding: 10% 15% 0 4%;
+					p {
+						line-height: 33px;
+						font-size: 20px;
+						font-weight: 300;
+					}
+				}
+			}
+		}
+		.about-image-container {
+			margin-top: 20px;
+			margin-left: -5%;
+			.right-pics {
+				text-align: left;
+				padding-top: 130px;
+				margin-left: -15%;
+			}
+			.left-pics {
+				text-align: right;
+			}
+			.about-image {
+				width: 200px;
+			}
+			.about-image-mixing {
+				margin-top: 50px;
+				width: 150px;
+			}
+			.about-image-cake {
+				width: 150px;
+				margin-top: 38px;
+			}
+			img {
+				border-radius: 50%;
+	    	border-width: 15px;
+		    border-image: url(about-image-bkgd.png) 90 stretch;
+		    -webkit-border-image: url(about-image-bkgd.png) 90 stretch;
+		    -o-border-image: url(about-image-bkgd.png) 90 stretch;
+			}
+		}
+	}
+}
+
+#home-page {
+	#page {
+		background-color: rgba( 0, 0, 0, 0)
+	}
+}
+
+#contact-form{
+	text-align: center;
+	margin-top:40px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	height: 410px;
+	p {
+		font-family: 'Open Sans', sans-serif;
+	}
+	.contact-mugs, .contact-tools {
+		height: 200px;
+		margin-top: 100px;
+	}
+	.inquiries {
+		margin-top: 25px;
+		.message_field {
+			margin-top: 20px;
+			textarea {
+				padding: 5px;
+				width: 95%;
+				border: none;
+				font-size: 16px;
+				font-family: 'Open Sans';
+				font-weight: 300;
+			}
+		}
+		input.text {
+			width: 90%;
+			padding: 5px;
+			font-size: 16px;
+			border: none;
+			font-family: 'Open Sans';
+			font-weight: 300;
+		}
+		input[type="submit"] {
+    margin: 12px 3px 20px 3px;
+    border: none;
+    width: 30%;
+    border-radius: 3px;
+    color: white;
+    background-color: #6AB0EF;
+    padding: 5px 5px 0 5px;
+    font-family: Sacramento;
+    font-size: 32px;
+		}
+	}
+}
+.gallery-container {
+	.gallery-holder{
+		#gallery {
+			padding: 60px;
+			height: auto;
+			margin: 0 auto;
+		  .gallery_item {
+		    float: left;
+		    width: 180px;
+		    height: 180px;
+		    padding: 4px;
+		    transform: translate(0px, 0px) scale(1, 1);
+		    img{
+		    	border-width: 10px 15px 30px 19px;
+    	    border-image: url(gallery-photo-bkgd.svg) 20 stretch;
+    	    -webkit-border-image: url(gallery-photo-bkgd.svg) 20 stretch;
+    	    -o-border-image: url(gallery-photo-bkgd.svg) 20 stretch;
+		    	opacity: 0.8;
+		    	border-radius: 2px;
+					overflow: hidden;
+		    	-webkit-transition: opacity;
+		    	-moz-transition: opacity;
+		    	-webkit-transition:all 1000ms;
+		    	-o-transition:all 1000ms;
+		    	transition:all 1000ms;		
+		    }
+		    img:hover {
+		    	opacity:1;
+		    	-webkit-transform:scale(1.1, 1.1);
+		    	-o-transform:scale(1.1, 1.1);
+		    	transform:scale(1.1, 1.1);
+		    }
+		  }
+		}
+	}
+}
+
+.titlesection h1{
+	margin:50px 20px;
+	text-align:center;	
+}
+.topwaves{
+	width:100%;
+	float:left;
+	height:15px;
+	background-image:image-url( 'top-waves.svg' );
+	background-repeat:repeat-x;
+	position:absolute;
+	margin-top:-2px;
+	z-index:1;	
+}
+.bottomwaves{
+	width:100%;
+	height:15px;
+	margin-top: -18px;
+	background-image:image-url( 'bottom-waves.svg' );
+	background-repeat:repeat-x;
+	position:absolute;
+	z-index:1;
+}
+.slider-img {
+	width:100%;
+}
+ .fullwidthbanner-container{
+	width:100% !important;
+	position:relative;
+	padding:0;
+	max-height:450px !important;
+	overflow:hidden;
+}
+.clearfix:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+.btn a{
+	font-size:17px;
+	padding:5px 10px;
+	color:#FFF;	
+	font-family: 'Sacramento';
+}

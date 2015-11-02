@@ -1,0 +1,16 @@
+<div class="gallery-container">
+	<div class="gallery-holder">	
+		<section id="gallery" class="grid">
+			<% @page.images.each_with_index do |image, index| %>
+		    <div class="gallery_item">
+		      <%= link_to image_tag(image.thumbnail( "150x150#c" ).url),
+		                  image.thumbnail( geometry: "900x600" ).url,
+		                  :class => 'gallery-img', :data => { :lightbox => 'lightbox', :title => @page.caption_for_image_index(index) } %>
+		   	</div>
+		  <% end %>
+		</section>
+	</div>
+</div>
+
+
+

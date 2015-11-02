@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<%= render "/refinery/html_tag" %>
+  <% site_bar = render('/refinery/site_bar', :head => true) -%>
+  <head>
+    <%= render "/refinery/head" %>
+    <title>Adelinas Bakery</title>
+    <meta name="description" content="Delicious sweets and treats for whatever your taste may be. Adelinas Bakery - Where theres a whisk theres a way.">
+    <meta name="keywords" content="bakery, cake, wedding, cupcake, cookie, sweets, treats, Christina, Arpante, Adelinas, bake">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <%= favicon_link_tag 'favicon.ico' %>
+    <%= favicon_link_tag 'favicon.png', rel: 'apple-touch-icon', type: 'image/png' %>
+    <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css' rel='stylesheet' type='text/css'>
+    <%= javascript_include_tag 'jquery', 'application' %> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+  </head>
+  <body id="<%= canonical_id @page %>">
+    <!-- <#%= site_bar -%> -->
+    <div id="page_container">
+      <header id="header">
+        <%= render "/refinery/header" -%>
+      </header>
+      <section id="page">
+        <%= yield %>
+      </section>
+      <footer>
+        <%= render "/refinery/footer" -%>
+      </footer>
+    </div>
+    <%= render "/refinery/javascripts" %>
+  </body>
+</html>

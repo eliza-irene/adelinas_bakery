@@ -2,8 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.22'
 
-gem 'pry'
-
+gem 'pry' 
 
 group :development, :test, :production do
   gem 'pg'
@@ -11,6 +10,7 @@ end
 
 group :production do
   gem 'fog'
+  gem 'rails_12factor'
 end
 
 # Gems used only for assets and not required

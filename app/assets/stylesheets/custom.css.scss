@@ -325,7 +325,39 @@ nav a:hover{
 
 #home-page {
 	#page {
-		background-color: rgba( 0, 0, 0, 0)
+		background-color: rgba( 0, 0, 0, 0);
+		padding-bottom: 60px;
+	}
+	#featured-images {
+		.featured-images-title {
+			text-align: center;
+		}
+		.cake-icon {
+			margin-left: 50%;
+			position: relative;
+			left: -12px;
+		}
+		.divider-line {
+			top: -29px;
+		    position: relative;
+		    margin-left: 50%;
+		    left: -360px;
+		}
+		#home-gallery {
+			list-style: none;
+		    position: relative;
+		    text-align: center;
+		    padding-left: 0;
+			.homepage-images {
+				display: inline-block;
+				border: 10px solid white;
+			    border-radius: 5px;
+			    -webkit-box-shadow: 0px 2px 16px 0px rgba(0,0,0,0.35);
+			    -moz-box-shadow: 0px 2px 16px 0px rgba(0,0,0,0.35);
+			    box-shadow: 0px 1px 16px 0px rgba(0,0,0,0.35);
+			    margin: 15px;
+			}
+		}
 	}
 }
 
